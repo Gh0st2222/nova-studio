@@ -16,13 +16,13 @@ The **[Dev Bible](https://nova-woad-phi.vercel.app/docs)** is the guide to makin
 
 ## Updates
 
-Nova Studio keeps itself up to date. When it starts, it checks for a newer release here and downloads it in the background; when it's ready, you can restart right away, or it switches the next time you open Nova Studio. Every download is checked (SHA-256) before it's used.
+Nova Studio keeps itself up to date. When it starts, it checks for a newer release here and downloads it in the background; when it's ready, you can restart right away, or it switches the next time you open Nova Studio. Every download is checked (SHA-256) before it's used. The files it needs beside it (NVIDIA's DLSS libraries) come with each release the same way, and are put back if they go missing.
 
 Each release has a `latest.json` that says what the newest version is and where to get it.
 
 ## Requirements
 
-Windows 10 or 11, 64-bit, with a graphics card that supports Vulkan or Direct3D 12 (Nova Studio uses the Forward+ renderer). 8 GB of memory or more.
+Windows 10 or 11, 64-bit, with a graphics card that supports Vulkan or Direct3D 12 (Nova Studio uses the Forward+ renderer). 8 GB of memory or more. To try NVIDIA DLSS in your experiences: an NVIDIA GeForce RTX card (Frame Generation: RTX 40 series or newer).
 
 **Uninstall:** delete `%LOCALAPPDATA%\Nova Studio` and the Nova Studio shortcut in the Start menu. Your experiences stay wherever you saved them.
 
@@ -31,3 +31,5 @@ Windows 10 or 11, 64-bit, with a graphics card that supports Vulkan or Direct3D 
 Nova Studio is free to download and use. Its source code isn't public.
 
 Nova Studio is built on [Godot Engine](https://godotengine.org), which is open source under the MIT license. The notices for Godot and the libraries it includes are in [GODOT_LICENSE.txt](GODOT_LICENSE.txt) and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+
+NVIDIA DLSS: Nova Studio includes NVIDIA's DLSS libraries (`nvngx_dlss.dll` and `nvngx_dlssg.dll`, © NVIDIA Corporation), which it keeps beside itself for DLSS, DLAA and DLSS Frame Generation on NVIDIA RTX graphics cards. They're NVIDIA's, under the NVIDIA RTX SDKs license (its text is in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)): you may not reverse engineer, decompile, disassemble or modify them, or distribute them on their own. NVIDIA, DLSS and Reflex are trademarks of NVIDIA Corporation.
